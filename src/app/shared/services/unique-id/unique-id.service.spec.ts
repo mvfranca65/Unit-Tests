@@ -47,9 +47,7 @@ describe(UniqueIdService.name, () => {
             .withContext(`Empty value: ${emptyValues}`)
             .toThrow();
         });
-    });
-
-
+    }); 
 
 });
 

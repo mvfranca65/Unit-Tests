@@ -1,13 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LikeWidgetComponent } from './shared/components/like-widget/like-widget.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { CommonModule } from '@angular/common';
-import { UniqueIdService } from './shared/services/unique-id/unique-id.service';
-import { LikeWidgetModule } from './shared/components/like-widget/like-widget.module';
+import { PhotoListModule } from './components/photo-list/photo-list.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +13,8 @@ import { LikeWidgetModule } from './shared/components/like-widget/like-widget.mo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LikeWidgetModule
+    HttpClientModule,
+    PhotoListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
